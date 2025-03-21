@@ -1,0 +1,63 @@
+{
+  "RedisConnection": {
+    "Hostname": "103.150.240.66",
+    "Port": 6379,
+    "Password": "ph9UpCytm6fhZCdB",
+    "HashGroupCaller": [  "Daiichi-Viettel-Status","Daiichi-backupcaller-Status","Daiichi-fixedphone-status" ]
+  },
+  "MobileRedisConnection": {
+    "Hostname": "103.150.240.66",
+    "Port": 6379,
+    "Password": "ph9UpCytm6fhZCdB",
+    "HashGroupCallerMobileData": "Mobile-Port-Data"
+  },
+  "Homer": {
+    "Listen": true,
+    "HomerConnectionStrings": "Host=10.200.101.132;Database=homer_data;Port=5432;Username=homer_user;Password=phpsPwGslZI1Fjdrpb6sXsksuc",
+    "Ip": [ "100.101.55.45", "118.69.114.166", "118.69.115.134" ]
+  },
+  "DetectCode": [
+    { "Code": "403", "Retry": 2 },
+    { "Code": "603", "Retry": 4 }
+  ],
+  "AGI": {
+    "Monitor": "/var/spool/asterisk/monitor",
+    "Mobi": {
+      "prefix": [ "070", "076", "077", "078", "079", "089", "090", "093" ]
+    },
+    "viettel": {
+      "prefix": [ "086", "096", "097", "098", "032", "033", "034", "035", "036", "037", "038", "039", "8486", "8496", "8497", "8498", "8432", "8433", "8434", "8435", "8436", "8437", "8438", "8439" ]
+    },
+    "vina": {
+      "prefix": [ "088", "091", "094", "083", "084", "085", "081", "082", "8488", "8491", "8494", "8483", "8484", "8485", "8481", "8482" ]
+    }
+  },
+  "Telegram": {
+    "chat_id": "-1002438116501",
+    "Token": "7114772697:AAHmALkdUVjRwyVPPu263Fh5AHIgw-FeCks",
+    "Replace": ""
+  },
+  "RabbitMQ": {
+    "Hostname": [ "103.150.240.233" ],
+    "Port": 5672,
+    "ConsumerCount": 2,
+    "MessageCount": 10,
+    "VirtualHost": "DaiiChi",
+    "UserName": "sup_admin_daiichi",
+    "Password": "]rKw2@P#s!3&B5{JYi^qA",
+    "QueueToVoiceMail": "DaiiChi_QueueToVoiceMail",
+    "QueueToNotifyLockNumber": "DaiiChi_QueueToLockNumberNotify"
+  },
+  "MailConfig": {
+    "SmtpServer": "email-smtp.ap-southeast-1.amazonaws.com",
+    "SmtpPort": 587,
+    "User": "AKIA6QQQL42WM6WBHAY5",
+    "Password": "BMAqNJZSpMG0DrY98xl8ArZVE1E1CeowIdfELeLWK+Fj",
+    "Subject": "DaiiChi - Warning SIP",
+    "From": "noc@isws.io",
+    "To": [ "thaolnp@fpt.com", "tungpt49@fpt.com", "lamptt2@fpt.com", "phuongdd6@fpt.com", "hungnt92@fpt.com", "longbd8@fpt.com", "tuanlh15@fpt.com", "nhanlk2@fpt.com", "huynpq@fpt.com", "thangtv14@fpt.com", "khiemdn4@fpt.com", "DM.Tien@dai-ichi-life.com.vn", "NT.Phu@dai-ichi-life.com.vn" ],
+    "SendRetry": 3,
+    "SeandAction": true,
+    "SendRetryTimeout": 30 //giay
+  }
+}
